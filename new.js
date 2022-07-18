@@ -1,31 +1,30 @@
-var scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69, 34, 55, 51, 52, 
-44, 51, 69, 64, 66, 55, 52, 61, 46, 31, 57, 52, 44, 18, 41, 53, 55, 61, 51, 44];
-function printAndGetHighScore(scores){
-var highScore = 0;
-var output;
-for (var i = 0; i < scores.length; i ++){
-    output = "Bubble solution #" + i + " score: " + scores[i];
-    console.log(output);
-    if (scores[i] > highScore) {
-        highScore = scores[i];
+function makeCar() {
+    var makes = ["Chevy", "GM", "Fiat", "Webville Motors", "Tucker"];
+    var models = ["Cadillac", "500", "Bel-Air", "Taxi", "Torpedo"];
+    var years = [1955, 1957, 1948, 1954, 1961];
+    var colors = ["red", "blue", "tan", "yellow", "white"];
+    var convertible = [true, false];
 
-    }
-}
-return highScore;
-}
+    var rand1 = Math.floor(Math.random() * makes.length);
+    var rand2 = Math.floor(Math.random() * models.length);
+    var rand3 = Math.floor(Math.random() * years.length);
+    var rand4 = Math.floor(Math.random() * colors.length);
+    var rand5 = Math.floor(Math.random() * 5) + 1;
+    var rand6 = Math.floor(Math.random() * 2);
 
-function getBestResults(scores, highScore){
-var bestSolutions = [];
-for (var i = 0; i < scores.length; i++) {
- if (scores[i] == highScore) {
- bestSolutions.push(i);
- }
+    var car = {
+        make: makes[rand1],
+        model: models[rand2],
+        year: years[rand3],
+        color: colors[rand4],
+        passengers: rand5,
+        convertible: converible[rand6],
+        mileage: 0 
+    };
+    return car;
 }
-return bestSolutions;
+function displayCar(car){
+    alert("Your new car is a " + car.year + " " + car.make + " " + car.model);
 }
-var highScore = printAndGetHighScore(scores);
-
-console.log("Bubbles tests: " + scores.length);
-console.log("Highest bubble score: " + highScore);
-var bestSolutions = getBestResults(scores, highScore);
-console.log("Solutions with the highest score: " + bestSolutions);
+var carToSell = makeCar();
+displayCar(carToSell);
