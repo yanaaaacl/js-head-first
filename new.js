@@ -1,2 +1,4 @@
-let myText = "The dog ate my homework!";
-alert(myText);
+function speedTime(speed, time){
+alert(speed * time);
+}
+speedTime(20, 6);
