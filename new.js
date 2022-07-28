@@ -1,4 +1,4 @@
-function speedTime(speed, time){
-alert(speed * time);
+function sayHello(){
+    alert("Hello, Yana");
 }
-speedTime(20, 6);
+sayHello();
