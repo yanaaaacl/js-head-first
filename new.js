@@ -1,10 +1,13 @@
-let speedLimit = 55;
-function amISpeeding(speed){
-    if (speed >= speedLimit){
-        alert("Yes. You are speeding.");
-    }else{
-        alert("No.You are not speeding.What's wrong with you?");
+let xPos = 300;
+let yPos = 150;
+
+function sendWarning(x, y){
+    if ((x < xPos) && (y < yPos)) {
+        alert("Adjust the position");
+    } else{
+        alert("Things are fine!");
     }
 }
-amISpeeding(53);
-amISpeeding(72);
+sendWarning(500, 160);
+sendWarning(100, 100);
+sendWarning(201, 149);
