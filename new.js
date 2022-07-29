@@ -1,13 +1,8 @@
-let xPos = 300;
-let yPos = 150;
-
-function sendWarning(x, y){
-    if ((x < xPos) && (y < yPos)) {
-        alert("Adjust the position");
-    } else{
-        alert("Things are fine!");
-    }
+let position = 200;
+if (position < 100){
+    alert("Do something!");
+}else if ((position >= 200) && (position < 300)){
+    alert("Do something else!");
+}else{
+    alert("Do something even more different!");
 }
-sendWarning(500, 160);
-sendWarning(100, 100);
-sendWarning(201, 149);
