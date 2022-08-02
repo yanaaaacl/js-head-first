@@ -1,12 +1,13 @@
-
-function createPhoneNumber(numbers){
-    
-    var oneTwoThree;
-    while(oneTwoThree.length < 3 ){
-    if (numbers == 1 || numbers == 2 || numbers == 3){
-      oneTwoThree += numbers;
-    }  
-    }
-    alert(oneTwoThree);
+function stopWatch(){
+  let startTime = Date.now();
+  function getDelay(){
+    let elapsedTime = Date.now() - startTime;
+    alert(elapsedTime);
   }
-createPhoneNumber([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  return getDelay;
+}
+let timer = stopWatch();
+for(let i = 0; i < 1000000; i++){
+  let foo = Math.random() * 10000;
+}
+timer();
