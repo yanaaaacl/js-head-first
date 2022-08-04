@@ -1,13 +1,7 @@
-function stopWatch(){
-  let startTime = Date.now();
-  function getDelay(){
-    let elapsedTime = Date.now() - startTime;
-    alert(elapsedTime);
-  }
-  return getDelay;
+let names = ["marge", "homer", "bart", "lisa"];
+function capitalizeItUp(item){
+    let firstLetter = item.charAt(0).toUpperCase();
+    return firstLetter + item.slice(1);
 }
-let timer = stopWatch();
-for(let i = 0; i < 1000000; i++){
-  let foo = Math.random() * 10000;
-}
-timer();
+let newNames = names.map(capitalizeItUp);
+alert(newNames);
