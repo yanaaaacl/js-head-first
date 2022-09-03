@@ -1,5 +1,23 @@
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-let total = numbers.reduce(function(total, current){
-    return total + current;
-}, 0);
-alert(total);
+class Planet{
+    constructor(name, radius){
+        this.name = name;
+        this.radius = radius;
+    }
+    getSurfaceArea(){
+        let SurfaceArea = 4 * Math.PI * Math.pow(this.radius, 2);
+        console.log(SurfaceArea + " square km!");
+        return SurfaceArea;
+    }
+    set gravity(value){
+        console.log("Setting value!");
+        this._gravity = value;
+    }
+    get gravity(){
+        console.log("Getting value!");
+        return this._gravity;
+    }
+}
+let earth = new Planet("Earth", 6378);
+earth.gravity = 9.81;
+earth.getSurfaceArea();
+console.log(earth.gravity);
