@@ -1,5 +1,5 @@
-let newElement = document.createElement("p");
-let bodyElement = document.querySelector("body");
+document.addEventListener("click", changeColor, false);
 
-newElement.textContent = "Or do I exist entirely in your imagination?";
-bodyElement.appendChild(newElement);
+function changeColor(){
+    document.body.style.backgroundColor = "#ffc926";
+}
