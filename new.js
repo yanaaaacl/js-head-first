@@ -1,8 +1,4 @@
-function factorial(n){
-    if (n == 0){
-        return 1;
-    } else{
-        return factorial(n - 1) * n;
-    }
+let theNumber = Number(prompt("Введите число"));
+if (!Number.isNaN(theNumber)){
+console.log("Это число является квадратным корнем из " + theNumber * theNumber);
 }
-console.log(factorial(8));
