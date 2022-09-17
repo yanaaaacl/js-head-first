@@ -1,20 +1,17 @@
-let string = "";
+
+let newNew = "# # # # #";
 counter = 0;
-while(counter < 7){
-    string += "#";
-    console.log(string);
-    counter += 1;
-}
-let newString = "";
-for(let i = 0; i < 7; i++){
-    newString += "#";
-    console.log(newString);
-}
-let newNew = "#";
-while(newNew.length <= 7){
+while(counter < 8){
+    console.log(" " + newNew);
+    
     console.log(newNew);
-    newNew += "#";
+    counter += 2;
+      
+}
+let newString = "# # # #";
+for (let i = 0; i < 8; i+=2){
+    console.log(" " + newNew);
     
-    
+    console.log(newNew);
 }
  
