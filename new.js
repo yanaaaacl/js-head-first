@@ -1,17 +1,15 @@
 
-let newNew = "# # # # #";
-counter = 0;
-while(counter < 8){
-    console.log(" " + newNew);
-    
-    console.log(newNew);
-    counter += 2;
-      
+let num = 0;
+for (let i = 0; i <= 100; i++){
+    num += 1;
+    if (num % 3 == 0 && num % 5 == 0){
+        console.log("FizzBuzz");
+    }else if (num % 3 == 0){
+        console.log("Fizz");
+    }else if (num % 5 == 0){
+        console.log("Buzz");
+    }else{
+        console.log(num);
+    }
+     
 }
-let newString = "# # # #";
-for (let i = 0; i < 8; i+=2){
-    console.log(" " + newNew);
-    
-    console.log(newNew);
-}
- 
