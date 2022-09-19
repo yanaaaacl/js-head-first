@@ -15,3 +15,4 @@ function hummus (factor){
     ingredient(0.5, "чайной ложки", "кумина");
 
 };
+hummus(5);
