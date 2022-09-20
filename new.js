@@ -1,8 +1,8 @@
-function power (base, exponent) {
-    let result = 1;
-    for (let count = 0; count < exponent; count++){
-        result *= base;
+function power(base, exponent){
+    if(exponent == 0){
+        return 1;
+    } else{
+        return base * power(base, exponent - 1);
     }
-    return result;
-};
+}
 console.log(power(2, 10));
