@@ -60,4 +60,36 @@ function moneyRecursion2(){
 
     }
 }
-moneyRecursion2();
+//moneyRecursion2();
+
+function isEven(num){
+    if (num % 2 == 0){
+        return true;
+    } else{
+        return false;
+    }
+
+}
+//console.log(isEven(-2));
+
+function countBs(ourString){
+    let b = 0;
+    for (let i = 0; i != ourString.length; i++){
+        if (ourString.charAt([i]) == "B"){
+            b += 1;
+        }
+    }
+    console.log(b);
+}
+//countBs("BBBBbBB")
+
+function countChar(ourString, ourSimboul){
+    let b = 0;
+    for (let i = 0; i != ourString.length; i++){
+        if (ourString.charAt([i]) == ourSimboul){
+            b += 1;
+        }
+    }
+    console.log(b)
+}
+countChar("SSSBBBaaaa", "a");
