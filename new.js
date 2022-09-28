@@ -92,4 +92,86 @@ function countChar(ourString, ourSimboul){
     }
     console.log(b)
 }
-countChar("SSSBBBaaaa", "a");
+//countChar("SSSBBBaaaa", "a");
+
+
+// var mack = [];
+// mack.push("Максим");
+// mack.push("Мысливец", "козёл!");
+
+
+// let newWord = mack.pop();
+
+// mack.push("ублюдок!");
+// console.log(mack);
+// console.log(mack.join(" "));
+
+// var stupid = {
+//     name: "Максим",
+//     surname: "Мысливец",
+//     car: "Ford Mondeo 2011",
+//     adress: "Хутынская, 27 к 1, подьезд 2, кв 20"
+// };
+// console.log(stupid.name);
+// console.log(stupid.surname);
+// stupid.brain = "Мозг отсутствует";
+// console.log(stupid.brain);
+// delete stupid.car;
+// console.log(stupid.car);
+// console.log("car" in stupid);
+
+
+
+// var daysStupidMan = [];
+
+// function addEntry(events, didITurnIntoAMonster){
+//     daysStupidMan.push({
+//         events: events,
+//         squirrel: didITurnIntoAMonster
+//     });
+// }
+// addEntry(["встать разбитым", "работа", "подудеть", "дом", "тупить в ведьмака"], true);
+// addEntry(["выходной", "уборка", "родители", "пивасик", "подудеть", "тупить в ведьмака"], true);
+// addEntry(["Водить машину", "ехать в питер к Вове", "пить пиво", "подудеть", "есть пиццу"], false);
+// addEntry(["Водить машину", "ехать в питер к Вове", "пить с друзьями пиво", "подудеть", "есть суши"], false);
+
+// console.log(daysStupidMan);
+
+// var toDoList = [];
+
+// function addToDoList(task){
+//     toDoList.push(task);
+// }
+// function deleteToDoList(){
+//     return toDoList.shift();
+// }
+// function addInTheEnd(task){
+//     toDoList.unshift(task);
+// }
+// addToDoList("постирать");
+// addToDoList("поесть");
+// addToDoList("выучить JS");
+// deleteToDoList();
+// addInTheEnd("помыться");
+
+// console.log(toDoList);
+
+// function remove(array, index){
+//     return array.slice(0, index).concat(array.slice(index + 1));
+// }
+// console.log(remove(["Максим", "Мысливец", "конченный", "урод"], 2));
+
+// var daysStupidMan = [];
+
+// function addEntry(squirrel){
+//     var entry = {events: [], squirrel: squirrel};
+//     for (var i = 1; i < arguments.length; i++){
+//         entry.events.push(arguments[i]);
+//     }
+//     daysStupidMan.push(entry);
+//     };
+
+// addEntry(true, "встать разбитым", "работа", "подудеть", "дом", "тупить в ведьмака");
+
+
+// console.log(daysStupidMan);
