@@ -177,17 +177,23 @@
 // console.log(daysStupidMan);
 
 let number = [];
-function range(one, two){
+function range(one, two, three){
     
-    for(let i = 0; i != two; i++){
+    for(let i = 0; number.length != two; i++){
         
         number.push(one);
-        one += 1;
+        if (three > 1){
+            one += three;
+        }else{
+            one += 1;
+        }
+        
+           
     }
-    
-       
+    console.log(number);
+         
 }
-range(1, 10);
+range(1, 10, 2);
 
 function sum(){
     counter = 0;
