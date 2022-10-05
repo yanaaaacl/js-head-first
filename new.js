@@ -176,35 +176,73 @@
 
 // console.log(daysStupidMan);
 
-let number = [];
-function range(one, two, three){
+// let number = [];
+// function range(one, two, three){
     
-    for(let i = 0; number.length != two; i++){
+//     for(let i = 0; number.length != two; i++){
         
-        number.push(one);
-        if (three > 1){
-            one += three;
-        }else{
-            one += 1;
-        }
+//         number.push(one);
+//         if (three > 1){
+//             one += three;
+//         }else{
+//             one += 1;
+//         }
         
            
-    }
-    console.log(number);
+//     }
+//     console.log(number);
          
-}
-range(1, 10, 2);
+// }
+// range(1, 10, 2);
 
-function sum(){
-    counter = 0;
+// function sum(){
+//     counter = 0;
 
-    for(let b = 0; b != number.length; b++){
-        counter += number[b];
-    }
-    console.log(counter);
-}
-sum();
+//     for(let b = 0; b != number.length; b++){
+//         counter += number[b];
+//     }
+//     console.log(counter);
+// }
+// sum();
 
+
+// function reverseArray(endArray){
+//     let newArray = [];
+//     for(let i = 0; i < endArray.length; i++){
+        
+//         newArray[i] = endArray[(endArray.length - 1) - i];
+        
+
+//     }
+//     console.log(newArray);
+// }
+// reverseArray(["A", "B", "C"]);
+
+// var arrayValue = [1, 2, 3, 4, 5];
+// var arrayValue2 = [];
+// function reverseArrayInPlace(arrayValue){
+    
+//     for (let i = 0; i < arrayValue.length; i++){
+//     arrayValue2[i] = arrayValue[(arrayValue.length - 1) - i];
+   
+// }
+
+// }
+// reverseArrayInPlace(arrayValue);
+// console.log(arrayValue2);
+
+// let arrayValue = [1, 2, 3, 4, 5, 6];
+
+// function reverseArrayInPlace(array){
+//     for (let i = 0; i < Math.floor(array.length / 2); i++){
+//         let old = array[i];
+//         array[i] = array[(array.length - 1) - i];
+//         array[(array.length - 1) - i] = old;
+//     }
+//     return array;
+// }
+// reverseArrayInPlace(arrayValue);
+// console.log(arrayValue);
 
 
 
